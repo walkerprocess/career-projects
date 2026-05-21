@@ -1,0 +1,14 @@
+{
+  "name": "encrypted-chatroom",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "start:private": "node server.js --host=0.0.0.0 --https=1"
+  },
+  "dependencies": {
+    "selfsigned": "^2.4.1",
+    "ws": "^8.18.0"
+  }
+}

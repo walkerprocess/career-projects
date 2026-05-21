@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Encrypted Chatroom</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="join-panel" id="joinPanel">
+        <h1>Encrypted Chatroom</h1>
+        <label>
+          Display name
+          <input id="nameInput" value="Kevin" autocomplete="name" />
+        </label>
+        <label>
+          Room
+          <input id="roomInput" value="career-lab" />
+        </label>
+        <label>
+          Shared passphrase
+          <input id="passInput" type="password" placeholder="Use a long shared secret" />
+        </label>
+        <button id="joinButton">Join Secure Room</button>
+      </section>
+
+      <section class="chat-panel hidden" id="chatPanel">
+        <header>
+          <div>
+            <h1 id="roomTitle">Room</h1>
+            <p>End-to-end encrypted with AES-GCM in your browser.</p>
+          </div>
+          <div class="header-actions">
+            <button id="clearButton" type="button">Clear</button>
+            <span id="status">disconnected</span>
+          </div>
+        </header>
+        <ol id="messages" class="messages"></ol>
+        <form id="messageForm" class="composer">
+          <input id="messageInput" placeholder="Write an encrypted message" autocomplete="off" />
+          <button>Send</button>
+        </form>
+      </section>
+    </main>
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

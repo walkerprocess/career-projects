@@ -1,0 +1,134 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.join-panel,
+.chat-panel {
+  width: min(920px, 100%);
+  background: #ffffff;
+  border: 1px solid #dce3ef;
+  border-radius: 8px;
+  box-shadow: 0 18px 60px rgba(23, 32, 51, 0.08);
+}
+
+.join-panel {
+  display: grid;
+  gap: 16px;
+  max-width: 460px;
+  padding: 28px;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-weight: 700;
+  color: #31415f;
+}
+
+input,
+button {
+  min-height: 44px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font: inherit;
+}
+
+input {
+  padding: 0 12px;
+}
+
+button {
+  border: 0;
+  background: #1f5f8b;
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.chat-panel {
+  overflow: hidden;
+}
+
+.chat-panel header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  padding: 20px 24px;
+  background: #16324f;
+  color: #ffffff;
+}
+
+#status {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 13px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-actions button {
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.messages {
+  height: 54vh;
+  margin: 0;
+  padding: 20px 24px;
+  overflow: auto;
+  list-style: none;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.messages li {
+  max-width: 78%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #eef4fb;
+  border: 1px solid #dce7f4;
+}
+
+.messages .mine {
+  justify-self: end;
+  background: #dbeafe;
+}
+
+.composer {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  gap: 10px;
+  padding: 16px 24px 24px;
+}
+
+.hidden {
+  display: none;
+}
