@@ -1,8 +1,6 @@
 .env
-stock_env/
 __pycache__/
 */__pycache__/
 *.pyc
-cache/
 node_modules/
-outputs/smoke_test/
+outputs/clean_test/
