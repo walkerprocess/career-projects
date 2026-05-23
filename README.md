@@ -9,6 +9,7 @@ Portfolio projects for U.S. internship recruiting in business analytics, MIS, pr
 | [Encrypted Chatroom](./01-encrypted-chatroom) | Secure messaging, WebSocket relay, browser cryptography | Demonstrates secure-system thinking for CMU MSIS and technical product roles |
 | [Operations Analytics Decision Dashboard](./02-operations-analytics-dashboard) | Supply-chain risk monitoring, KPI analysis, RSS-driven live news signals | Connects Kelley DLT interests with analytics and executive communication |
 | [JobFit Resume Intelligence Tracker](./03-jobfit-resume-intelligence) | Live opportunity lead scoring, resume keyword matching, recruiting operations | Turns internship search into a measurable pipeline |
+| [Stock Signal Engine](./04-stock-signal-engine) | Market data, news sentiment, risk scoring, Excel reporting | Shows explainable analytics for finance/product roles without relying on GPT for core logic |
 
 ## Current Direction
 
@@ -29,4 +30,3 @@ I am a Kelley School of Business student studying Management Information Systems
 ## Running The Projects
 
 Each project has its own README with setup instructions. The Python projects use only standard-library modules, and the chatroom uses Node.js dependencies listed in its `package.json`.
-
